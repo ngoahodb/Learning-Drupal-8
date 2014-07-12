@@ -1,7 +1,0 @@
-name: Hello
-description: 'Traing drupal 8'
-package: Traing drupal 8
-type: module
-version: 8.x-1.0
-core: 8.x
-version: 1.0
