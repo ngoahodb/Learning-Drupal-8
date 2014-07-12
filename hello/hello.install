@@ -1,0 +1,24 @@
+<?php
+function hello_schema() {
+  $schema['hello'] = array(
+    
+      'description' => 'Hello world',
+      'fields' => array(
+        'nid' => array(
+          'description' => 'The primary identifier for a node.',
+          'type' => 'serial',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ),
+        'name' => array(
+          'description' => 'Your name',
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+          'default' => '',
+        ),
+      ),
+      'primary key' => array('nid'),
+  );
+  return $schema;
+}
